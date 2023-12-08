@@ -1,0 +1,74 @@
+{
+    "ice-storm": {
+        "index": 1,
+        "event_type": "heating",
+        "EPW": "CAN_ON_Ottawa.716280_CWEC_ICESTORM.epw",
+        "t_start": 854,
+        "t_stop": 902,
+        "year": 1998,
+        "Nfreq": 10,
+        "VoLL_Ccold_exp": 12.5,
+        "VoLL_Chot_exp": -0.24375,
+        "description": "Simulation of 1998 ice-storm through Eastern Ontario. Outage is for 48 hours from Feb 5th@2pm to Feb 7th@2pm.",
+        "VoLL_cost": 12993.752923733793,
+        "VoLL_kWh": 1715.7570894453827,
+        "sches_turnoff": {
+            "HVACAvail": {
+                "sche_name": "HVAC Avail Sche",
+                "act_batt": "1.0",
+                "act_recov": "1.0"
+            },
+            "Light": {
+                "sche_name": "APT_LIGHT_SCH",
+                "act_batt": "0.25",
+                "act_recov": "1.0"
+            },
+            "Equip": {
+                "sche_name": "APT_EQP_SCH",
+                "act_batt": "0.5",
+                "act_recov": "1.0"
+            },
+            "DHW": {
+                "sche_name": "SWHSys1 Water Heater Setpoint Temperature Schedule Name",
+                "act_recov": "60",
+                "act_batt": "0"
+            }
+        }
+    },
+    "summer-blackout": {
+        "index": 2,
+        "event_type": "cooling",
+        "EPW": "CHEeR_2021-01-01_to_2021-12-31_NEW.epw",
+        "t_start": 5560,
+        "t_stop": 5608,
+        "Nfreq": 3,
+        "VoLL_Ccold_exp": 12.5,
+        "VoLL_Chot_exp": -0.24375,
+        "year": 2021,
+        "description": "Simulation of mock outage during August 2021 heat wave in Ottawa. CBC coverage: https://www.cbc.ca/news/canada/ottawa/heat-warning-ottawa-gatineau-cooling-centres-1.6152407. Starts: 2021-08-20 14:00.  Ends: 2021-08-22 14:00",
+        "sches_turnoff": {
+            "HVACAvail": {
+                "sche_name": "HVAC Avail Sche",
+                "act_batt": "1.0",
+                "act_recov": "1.0"
+            },
+            "Light": {
+                "sche_name": "APT_LIGHT_SCH",
+                "act_batt": "0.25",
+                "act_recov": "1.0"
+            },
+            "Equip": {
+                "sche_name": "APT_EQP_SCH",
+                "act_batt": "0.5",
+                "act_recov": "1.0"
+            },
+            "DHW": {
+                "sche_name": "SWHSys1 Water Heater Setpoint Temperature Schedule Name",
+                "act_recov": "60",
+                "act_batt": "0"
+            }
+        },
+        "VoLL_kWh": 1873.1763832900438,
+        "VoLL_cost": 12255.25826924141
+    }
+}
